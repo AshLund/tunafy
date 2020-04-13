@@ -1,6 +1,7 @@
 
 $("#submitBtn").on("click", function (event) {
     var search = $("#searchName").val().trim();
+    console.log(search);
     if (search === "") {
         console.log('please enter an artist');
         $('#errorAlert').text("Please Enter An Artist.")
@@ -48,11 +49,6 @@ $("#submitBtn").on("click", function (event) {
             var artist = lastFMResponse.artist.name
             var artistBio = lastFMResponse.artist.bio.summary
             console.log(artist + " " + artistBio)
-            // // var bioDiv=$("#bio");
-            // var newbioDiv=$("<div>" + artistBio + "</div>");
-            // bioDiv.append(newbioDiv)
-
-            // $('#artist').append(artist)
             $('#bio').html(artistBio)
         })
         // ================== Last FM API For Getting Top Tracks ==================== // 
