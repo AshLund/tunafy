@@ -1,6 +1,7 @@
+
 $("#submitBtn").on("click", function (event) {
     var search = $("#searchName").val().trim();
-    if (search == "") {
+    if (search ==+ "") {
         var errorAlert = '* please enter an artist';
         console.log('please enter an artist');
         $('#errorAlert').text(errorAlert)
@@ -8,6 +9,7 @@ $("#submitBtn").on("click", function (event) {
     } else {
     var noError = "";
     $('#errorAlert').text(noError)
+ 
     $("#gif").empty();
     $("#topTracks").empty();
     event.preventDefault();
