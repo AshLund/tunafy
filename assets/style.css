@@ -71,6 +71,14 @@ body {
     color: #091963;
 }
 
+#errorAlert {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #091963;
+    text-align: center;
+    width: 100%;
+}
+
 #gifImg {
     padding: 10px 10px 10px 10px;
     max-width: 100%;
