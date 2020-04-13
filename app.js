@@ -1,10 +1,9 @@
 
 $("#submitBtn").on("click", function (event) {
     var search = $("#searchName").val().trim();
-    if (search ==+ "") {
-        var errorAlert = '* please enter an artist';
+    if (search === "") {
         console.log('please enter an artist');
-        $('#errorAlert').text(errorAlert)
+        $('#errorAlert').text("Please Enter An Artist.")
         return false
     } else {
     var noError = "";
