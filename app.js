@@ -9,14 +9,14 @@ $("#submitBtn").on("click", function (event) {
     } else {
     var noError = "";
     $('#errorAlert').text(noError)
- 
     $("#gif").empty();
     $("#topTracks").empty();
     event.preventDefault();
-    const apiKey = 'AIzaSyCkrudrWOfe_tgbrb2Vhuyg9nWVkGRyvZc'
-    const apiKey10 = "3210dee919595df6a421526e3f0a6d13"
+    const apiKey = "AIzaSyCkrudrWOfe_tgbrb2Vhuyg9nWVkGRyvZc";
+    const apiKey10 ="3210dee919595df6a421526e3f0a6d13";
+    const apiKeygiphy= "dJZAoTE5oJZcb8BOEXkAExAi85YngNzf";
     const url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' + search + '&type=video&videoEmbeddable=true&order=viewCount' + '&maxResults=25&key=' + apiKey
-    const url1 = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=dJZAoTE5oJZcb8BOEXkAExAi85YngNzf&limit=10"
+    const url1 = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=" + apiKeygiphy +  "&limit=10"
     //?method=artist.gettoptracks
     const url2 = "https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + search + "&api_key=" + apiKey10 + "&format=json"
     //Get Artist TOP Tracks
